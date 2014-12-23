@@ -9,10 +9,5 @@ sudo apt-get install -y git
 git clone https://github.com/uengine/build-sds.git
 CURPATH=`pwd`
 
-# Install Wildfly server and Fluentd client agent
-cd $CURPATH/build-sds/node
-sudo sh -x build.sh
-
-# Install Fluentd server (log collector)
-cd $CURPATH/build-sds/collector
+cd $CURPATH/build-sds
 sudo sh -x build.sh
